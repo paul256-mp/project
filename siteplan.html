@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan - Uganda Tourism & Wildlife</title>
+  <style>
+    /* Color Schema */
+    :root {
+      --primary-color: #006400;
+      /* Uganda Green - Used for headings and accents */
+      --secondary-color: #FFD700;
+      /* Uganda Yellow - Used for highlights and buttons */
+      --accent-color: #8B4513;
+      /* Earth Brown - Used for backgrounds and accents */
+      --text-color: #2F4F4F;
+      /* Dark Slate - Used for body text */
+      --light-bg: #F5F5DC;
+      /* Beige - Used for backgrounds */
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+      background-size: cover;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Merriweather', Georgia, serif;
+      color: var(--primary-color);
+    }
+
+    section {
+      background-color: white;
+      margin: 1.5rem auto;
+      padding: 2rem;
+      max-width: 1000px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      font-family: 'Merriweather', Georgia, serif;
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: white;
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: var(--accent-color);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      margin: 0.5rem;
+      border-radius: 8px;
+      text-align: center;
+      line-height: 120px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .wireframe {
+      background-color: #eee;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border: 1px dashed #999;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .wireframe-box {
+      background-color: #ddd;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+    }
+
+    .mobile-view,
+    .desktop-view {
+      margin: 2rem 0;
+    }
+
+    .scenario-box {
+      background-color: var(--light-bg);
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    footer {
+      background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .font-demo {
+      margin: 1rem 0;
+      padding: 1rem;
+      border-left: 4px solid var(--secondary-color);
+      background-color: #f9f9f9;
+    }
+
+    .wireframe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .wireframe-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Uganda Tourism & Wildlife</h1>
+    <div class="logo">PEARL OF AFRICA EXPLORER</div>
+    <p>Site Plan Document</p>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Pearl of Africa Explorer</strong></p>
+      <p>This name was chosen to highlight Uganda's nickname as the "Pearl of Africa" while clearly communicating the
+        website's purpose as a tourism guide. It evokes the country's exceptional natural beauty and diverse wildlife
+        that Winston Churchill famously praised.</p>
+      <p><em>Domain availability: pearlagricaexplorer.com or visituganda.travel</em></p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The Pearl of Africa Explorer serves as Uganda's premier online tourism portal, showcasing the country's
+        breathtaking landscapes, diverse wildlife, and rich cultural heritage. The site will provide:</p>
+      <ul>
+        <li>Comprehensive information on national parks and wildlife reserves</li>
+        <li>Detailed guides to gorilla and chimpanzee trekking experiences</li>
+        <li>Cultural tourism opportunities and heritage site information</li>
+        <li>Travel planning resources including accommodation, transportation, and seasonal advice</li>
+        <li>Photography galleries showcasing Uganda's natural beauty</li>
+        <li>Booking services for tours and safari experiences</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <p>These questions represent what potential visitors to Uganda might ask when planning their trip:</p>
+
+      <div class="scenario-box">
+        <h3>Scenario 1: Wildlife Enthusiast</h3>
+        <p>"I want to see mountain gorillas in their natural habitat. Which national park offers the best gorilla
+          trekking experience, what permits are required, and what is the best time of year to visit?"</p>
+      </div>
+
+      <div class="scenario-box">
+        <h3>Scenario 2: Adventure Traveler</h3>
+        <p>"I'm interested in combining wildlife viewing with adventure activities. Where can I find information about
+          white-water rafting on the Nile, hiking Rwenzori Mountains, and visiting multiple national parks in one trip?"
+        </p>
+      </div>
+
+      <div class="scenario-box">
+        <h3>Scenario 3: Cultural Tourist</h3>
+        <p>"Beyond wildlife, I'd like to experience Ugandan culture. What traditional kingdoms, cultural sites, and
+          local community experiences can I include in my itinerary?"</p>
+      </div>
+    </section>
+
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <p>The selected color palette is inspired by Uganda's national colors and natural landscapes, creating a visually
+        appealing and culturally relevant design.</p>
+
+      <div class="color-swatch" style="background-color: var(--primary-color);">Uganda Green<br>#006400</div>
+      <p><strong>Primary Color (Uganda Green):</strong> Used for headings, navigation elements, and primary buttons.
+        This deep green represents Uganda's lush forests and national parks.</p>
+
+      <div class="color-swatch" style="background-color: var(--secondary-color); color: var(--text-color);">Uganda
+        Yellow<br>#FFD700</div>
+      <p><strong>Secondary Color (Uganda Yellow):</strong> Used for highlights, call-to-action buttons, and accents.
+        This golden yellow represents sunshine and the country's vibrant energy.</p>
+
+      <div class="color-swatch" style="background-color: var(--accent-color);">Earth Brown<br>#8B4513</div>
+      <p><strong>Accent Color (Earth Brown):</strong> Used for backgrounds, borders, and secondary elements. This rich
+        brown represents Uganda's fertile soil and traditional crafts.</p>
+
+      <div class="color-swatch" style="background-color: var(--text-color); color: white;">Dark Slate<br>#2F4F4F</div>
+      <p><strong>Text Color (Dark Slate):</strong> Used for body text and standard content. Provides excellent
+        readability while maintaining a natural feel.</p>
+
+      <div class="color-swatch" style="background-color: var(--light-bg); color: var(--text-color);">Beige<br>#F5F5DC
+      </div>
+      <p><strong>Background Color (Beige):</strong> Used for page background and content containers. Creates a warm,
+        natural appearance reminiscent of safari landscapes.</p>
+    </section>
+
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>The selected fonts combine elegance with readability, reflecting both the sophistication of modern tourism and
+        the natural beauty of Uganda.</p>
+
+      <div class="font-demo" style="font-family: 'Merriweather', serif;">
+        <h3>Merriweather</h3>
+        <p><strong>Usage:</strong> Headings (H1, H2, H3), logo, and special highlights.</p>
+        <p>Merriweather provides an elegant, sophisticated look that works well for headings and important text
+          elements, conveying the premium nature of Uganda's tourism offerings.</p>
+        <p>Sample: The Pearl of Africa Awaits Your Discovery</p>
+      </div>
+
+      <div class="font-demo" style="font-family: 'Open Sans', sans-serif;">
+        <h3>Open Sans</h3>
+        <p><strong>Usage:</strong> Body text, navigation items, buttons, and general content.</p>
+        <p>Open Sans is highly readable and works well for longer text passages, ensuring comfortable reading experience
+          across all devices.</p>
+        <p>Sample: Uganda is home to half of the world's remaining mountain gorillas, making it one of the most unique
+          wildlife destinations on the planet.</p>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <footer>
+    <p>Uganda Tourism & Wildlife Site Plan &copy; 2023 | The Pearl of Africa Explorer</p>
+  </footer>
+</body>
+
+</html>
